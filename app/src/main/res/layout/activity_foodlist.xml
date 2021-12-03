@@ -23,7 +23,7 @@
         android:id="@+id/txt_foodlist1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Food List"
+        android:text="Food_List"
         android:textColor="@color/blue"
         android:layout_marginTop="300px"
         android:gravity="center"
@@ -34,7 +34,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:entries="List Of Food"
+        android:entries="List_Of_Food"
         >
 
     </ListView>

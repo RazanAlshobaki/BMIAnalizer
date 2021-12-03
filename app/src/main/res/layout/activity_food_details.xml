@@ -21,12 +21,12 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
-        android:id="@+id/txt_Edit Food Details"
+        android:id="@+id/txt_Edit_Food_Details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="300px"
         android:gravity="center"
-        android:text="Edit Food Details"
+        android:text="Edit_Food_Details"
         android:textColor="@color/blue"
         android:textSize="100px"
         android:textStyle="bold" />
@@ -60,8 +60,6 @@
             android:layout_marginLeft="120px"
             android:layout_marginRight="50px"
             />
-
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -165,13 +163,11 @@
             android:layout_marginLeft="120px"
             android:layout_marginTop="2000px"
             android:background="@color/blue"
-            android:text="Upload Photo"
+            android:text="Upload_Photo"
             android:textColor="@color/white"
             android:textSize="80px"
             android:textStyle="bold"
-
             />
-
         <Button
             android:id="@+id/btn_savephoto3"
             android:layout_width="wrap_content"

@@ -23,7 +23,7 @@
         android:id="@+id/txt_NewAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create New Account"
+        android:text="Create_New_Account"
         android:textColor="@color/blue"
         android:layout_marginTop="200px"
         android:gravity="center"
@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="if you do not already have an account "
+        android:text="ifyoudonotalreadyhaveanaccount "
         android:textColor="@android:color/darker_gray"
         android:layout_marginTop="50px"
         android:gravity="center"
@@ -83,10 +83,11 @@
             android:hint="Re-Password"
             android:inputType="textPassword"
             android:minHeight="48dp"
-
-
             />
-        <Button
+    </LinearLayout>
+
+
+    <Button
             android:id="@+id/btn_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,6 +100,7 @@
 
             />
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,7 +109,7 @@
             android:id="@+id/txt_haveaccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You Have An Account?"
+            android:text="You_Have_An_Account?"
             android:textSize="80px"
             android:layout_marginTop="40px"
             android:textColor="@color/black"
@@ -116,7 +118,7 @@
             android:id="@+id/btn_log"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Log In"
+            android:text="Log_In"
             android:background="@null"
             android:textColor="@color/blue"
             android:textSize="50px"

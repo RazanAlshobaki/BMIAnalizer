@@ -26,8 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="200px"
         android:gravity="center"
-        android:text="Complete Your
-        Information"
+        android:text="Complete_Your_Information"
         android:textColor="@color/blue"
         android:textSize="100px"
         android:textStyle="bold" />
@@ -277,7 +276,7 @@
         android:layout_marginTop="250px"
         android:layout_marginRight="40px"
         android:background="@color/blue"
-        android:text="Save Data"
+        android:text="Save_Data"
         android:textColor="@color/white"
         android:textSize="70px"
         android:textStyle="bold" />
