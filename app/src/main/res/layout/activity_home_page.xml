@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="BMI Analyzer"
+            app:titleTextColor="@color/white"
+            app:titleMarginStart="400px"
+            android:background="@color/blue"
+            >
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/txt_hi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi, Mohammed"
+        android:textColor="@color/black"
+        android:layout_marginTop="200px"
+        android:gravity="center"
+        android:textSize="100px"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txt_currentstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Status"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="100px"
+        android:textSize="100px"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Normal( still Good)"
+        android:inputType="text"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="30px"
+        android:textSize="100px"
+        android:minHeight="48dp"
+        android:background="@drawable/fieldborder"
+        />
+    <TextView
+        android:id="@+id/txt_oldstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Old Status"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="100px"
+        android:textSize="100px"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_addfood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Food"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="100px"
+            android:layout_marginTop="200px"
+            android:layout_marginLeft="120px"
+
+            />
+        <Button
+            android:id="@+id/btn_addrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Record"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="100px"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="200px"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_viewfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Food"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="100px"
+        android:layout_marginTop="200px"
+        />
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240px"
+        android:background="@null"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="70px"
+        android:gravity="center"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>

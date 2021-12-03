@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_record"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            app:title="BMI Analyzer"
+            app:titleMarginStart="400px"
+            app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/txt_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:gravity="center"
+        android:text="New Record"
+        android:textColor="@color/blue"
+        android:textSize="100px"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txt_weightrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="250px"
+        android:text="Weight"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="80px" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fieldborder"
+        android:orientation="horizontal"
+        android:layout_marginTop="200px"
+        android:layout_marginLeft="200px"
+        >
+        <Button
+            android:id="@+id/butdec2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/fieldborder"
+            android:text="-"
+            android:textColor="@color/blue"
+            android:textSize="100px"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextText22"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:textColor="@color/blue"
+            android:hint="0"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textSize="100px"
+            android:background="@drawable/fieldborder"
+
+            />
+
+        <Button
+            android:id="@+id/buttinc222"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/fieldborder"
+            android:text="+"
+            android:textColor="@color/blue"
+            android:textSize="100px"
+
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textkilo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200px"
+        android:text="kg"
+        android:textSize="80px"
+        android:textColor="@color/blue"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txt_lengthrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="80px"
+        android:text="Length"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="80px" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fieldborder"
+            android:orientation="horizontal"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="200px"
+            >
+            <Button
+                android:id="@+id/buttondecrement22"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/fieldborder"
+                android:text="-"
+                android:textColor="@color/blue"
+                android:textSize="100px"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextText2newrecord"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:textColor="@color/blue"
+                android:hint="0"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textSize="100px"
+                android:background="@drawable/fieldborder"
+
+                />
+
+            <Button
+                android:id="@+id/buttinc2newrecord"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/fieldborder"
+                android:text="+"
+                android:textColor="@color/blue"
+                android:textSize="100px"
+
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textcm_newrecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="cm"
+            android:textSize="80px"
+            android:textColor="@color/blue"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:id="@+id/txt_daterecord"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="100px"
+        android:text="Date"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="80px"
+        />
+    <EditText
+        android:id="@+id/d_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="100px"
+        android:layout_marginRight="200px"
+        android:textSize="100px"
+        android:minHeight="48dp"
+        android:background="@drawable/fieldborder"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/txt_timerecord"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:text="Time"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="80px"
+            />
+        <EditText
+            android:id="@+id/t_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="200px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="200px"
+            android:textSize="100px"
+            android:minHeight="48dp"
+            android:background="@drawable/fieldborder"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_saverecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="180px"
+        android:layout_marginRight="40px"
+        android:background="@color/blue"
+        android:text="Save Data"
+        android:textColor="@color/white"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDetails"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="BMI Analyzer"
+            app:titleTextColor="@color/white"
+            app:titleMarginStart="400px"
+            android:background="@color/blue"
+            >
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/txt_Edit Food Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300px"
+        android:gravity="center"
+        android:text="Edit Food Details"
+        android:textColor="@color/blue"
+        android:textSize="100px"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="500px"
+        >
+        <TextView
+            android:id="@+id/txt_namefood3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="80px"
+            android:text="Name"
+            android:textColor="@color/blue"
+            android:textSize="100px"
+            android:textStyle="bold"
+
+            />
+        <EditText
+            android:id="@+id/editTextname3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fieldborder"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="50px"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="800px"
+        >
+        <TextView
+            android:id="@+id/txt_categoryfood3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="80px"
+            android:text="Category"
+            android:textColor="@color/blue"
+            android:textSize="100px"
+            android:textStyle="bold"
+
+            />
+        <EditText
+            android:id="@+id/editTextcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fieldborder"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="50px"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1100px"
+        >
+        <TextView
+            android:id="@+id/txt_caloryfood3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="80px"
+            android:text="Calory"
+            android:textColor="@color/blue"
+            android:textSize="100px"
+            android:textStyle="bold"
+
+            />
+        <EditText
+            android:id="@+id/editTextcalory3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fieldborder"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="50px"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/photofood3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="1400px"
+        android:text="Photo"
+        android:textColor="@color/blue"
+        android:textSize="100px"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:id="@+id/editTextphoto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fieldborder"
+        android:ems="15"
+        android:inputType="text"
+        android:minHeight="500px"
+        android:layout_marginTop="1600px"
+        android:layout_marginLeft="120px"
+        android:layout_marginRight="50px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_uploadPhoto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="2000px"
+            android:background="@color/blue"
+            android:text="Upload Photo"
+            android:textColor="@color/white"
+            android:textSize="80px"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/btn_savephoto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="2000px"
+            android:background="@color/blue"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="80px"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

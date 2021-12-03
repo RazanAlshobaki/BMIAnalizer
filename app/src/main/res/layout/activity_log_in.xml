@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="BMI Analyzer"
+            app:titleTextColor="@color/white"
+            app:titleMarginStart="400px"
+            android:background="@color/blue"
+            >
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textColor="@color/blue"
+        android:layout_marginTop="200px"
+        android:gravity="center"
+        android:textSize="100px"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txt_NoAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="if you already have an account, log in "
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="50px"
+        android:gravity="center"
+        android:textSize="60px"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="250px">
+
+        <EditText
+            android:id="@+id/txt_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:minHeight="48dp"
+            />
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:passwordToggleEnabled="true">
+    <EditText
+        android:id="@+id/txt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="passWord"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_marginTop="50px"
+        android:drawableRight="@drawable/eye"
+
+        />
+</com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="70px"
+            android:layout_marginTop="200px"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txt_NoHaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="you don't have an Account?"
+                android:textSize="60px"
+                android:layout_marginTop="40px"
+                android:textColor="@color/black"
+
+                />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40px"
+                android:background="@null"
+                android:text="Sign Up"
+                android:textColor="@color/blue"
+                android:textSize="50px"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
