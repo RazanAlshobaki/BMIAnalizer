@@ -23,7 +23,7 @@
         android:id="@+id/txt_welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome_Back"
+        android:text="Welcome Back"
         android:textColor="@color/blue"
         android:layout_marginTop="200px"
         android:gravity="center"
@@ -34,7 +34,7 @@
         android:id="@+id/txt_NoAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ifyoualreadyhaveanaccount,login"
+        android:text="if you already have an account,login"
         android:textColor="@android:color/darker_gray"
         android:layout_marginTop="50px"
         android:gravity="center"
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
-            android:inputType="text"
+            android:inputType="textPersonName"
             android:minHeight="48dp"
             />
 <com.google.android.material.textfield.TextInputLayout
@@ -65,7 +65,7 @@
         android:hint="passWord"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:layout_marginTop="50px"
+        android:layout_marginTop="20dp"
         android:drawableRight="@drawable/eye"
 
         />
@@ -79,21 +79,23 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="70px"
-            android:layout_marginTop="200px"
+            android:layout_marginTop="30dp"
+            android:onClick="onClick"
             />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             >
             <TextView
                 android:id="@+id/txt_NoHaveAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="youdon'thaveanAccount?"
+                android:text="youdon't have an Account?"
                 android:textSize="60px"
-                android:layout_marginTop="40px"
+                android:layout_marginTop="20dp"
                 android:textColor="@color/black"
 
                 />
@@ -102,12 +104,14 @@
                 android:id="@+id/btn_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="40px"
+                android:layout_marginTop="20dp"
                 android:background="@null"
-                android:text="SignUp"
+                android:text="Sign Up"
                 android:textColor="@color/blue"
-                android:textSize="50px"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:textSize="60px"
+                tools:ignore="TouchTargetSizeCheck"
+
+                />
         </LinearLayout>
 
     </LinearLayout>

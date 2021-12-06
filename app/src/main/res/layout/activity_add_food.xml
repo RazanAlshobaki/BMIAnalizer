@@ -167,7 +167,7 @@
             android:textColor="@color/white"
             android:textSize="80px"
             android:textStyle="bold"
-
+            android:clickable="true"
             />
 
         <Button
@@ -180,7 +180,9 @@
             android:text="Save"
             android:textColor="@color/white"
             android:textSize="80px"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:clickable="true"
+            />
 
     </LinearLayout>
 </RelativeLayout>

@@ -31,11 +31,5 @@
         android:textStyle="bold"
         />
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:entries="List_Of_Food"
-        >
 
-    </ListView>
 </RelativeLayout>

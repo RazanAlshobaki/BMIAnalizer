@@ -16,13 +16,7 @@
             android:name=".Foodlist"
             android:exported="false" />
         <activity
-            android:name=".food_list"
-            android:exported="false" />
-        <activity
             android:name=".AddFood"
-            android:exported="false" />
-        <activity
-            android:name=".interfac"
             android:exported="false" />
         <activity
             android:name=".new_record"

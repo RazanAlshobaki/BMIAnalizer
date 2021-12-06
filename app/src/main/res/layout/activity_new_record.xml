@@ -5,16 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".new_record"
-    android:orientation="vertical">
+    android:orientation="vertical"
+
+    >
+
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+
+        >
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/blue"
             app:title="BMI Analyzer"
+
             app:titleMarginStart="400px"
             app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
@@ -28,7 +35,9 @@
         android:text="New_Record"
         android:textColor="@color/blue"
         android:textSize="100px"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -71,7 +80,6 @@
             android:layout_width="70dp"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
             android:ems="10"
             android:textColor="@color/blue"
             android:hint="0"
@@ -147,7 +155,6 @@
                 android:layout_width="70dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="@android:color/transparent"
                 android:ems="10"
                 android:textColor="@color/blue"
                 android:hint="0"

@@ -97,7 +97,7 @@
             android:textStyle="bold"
             android:textSize="70px"
             android:layout_marginTop="100px"
-
+        android:clickable="true"
             />
 
 
@@ -109,7 +109,7 @@
             android:id="@+id/txt_haveaccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You_Have_An_Account?"
+            android:text="You Have An Account?"
             android:textSize="80px"
             android:layout_marginTop="40px"
             android:textColor="@color/black"
@@ -123,6 +123,7 @@
             android:textColor="@color/blue"
             android:textSize="50px"
             android:layout_marginTop="40px"
+            android:clickable="true"
             />
      </LinearLayout>
 
