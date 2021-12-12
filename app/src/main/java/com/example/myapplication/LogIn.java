@@ -25,7 +25,7 @@ public class LogIn extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_log_in);
         SignUp=(Button) findViewById(R.id.btn_signup);
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override

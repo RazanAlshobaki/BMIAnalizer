@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="200px"
         android:gravity="center"
-        android:text="Complete_Your_Information"
+        android:text="Complete Your Information"
         android:textColor="@color/blue"
         android:textSize="100px"
         android:textStyle="bold" />
@@ -50,7 +50,11 @@
             android:textStyle="bold"
 
             />
-
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
         <RadioButton
             android:id="@+id/radioMale"
             android:layout_width="wrap_content"
@@ -72,9 +76,8 @@
             android:textSize="80px"
             android:textColor="@color/blue"
             android:layout_marginLeft="100px"
-
             />
-
+        </RadioGroup>
 
 </LinearLayout>
     <LinearLayout
@@ -273,7 +276,7 @@
         android:layout_marginTop="250px"
         android:layout_marginRight="40px"
         android:background="@color/blue"
-        android:text="Save_Data"
+        android:text="Save Data"
         android:textColor="@color/white"
         android:textSize="70px"
         android:textStyle="bold"

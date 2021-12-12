@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage"
+    tools:context=".home_page"
     android:orientation="vertical">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -53,17 +53,29 @@
         android:minHeight="48dp"
         android:background="@drawable/fieldborder"
         />
+
     <TextView
         android:id="@+id/txt_oldstatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Old_Status"
+        android:text="Old Status"
         android:textColor="@color/blue"
         android:textStyle="bold"
         android:layout_marginTop="100px"
         android:layout_marginLeft="100px"
         android:textSize="100px"
         />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_BMI"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="horizontal"
+    >
+
+</androidx.recyclerview.widget.RecyclerView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,12 +85,12 @@
             android:id="@+id/btn_addfood"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add_Food"
+            android:text="Add Food"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="100px"
-            android:layout_marginTop="200px"
+            android:layout_marginTop="200dp"
             android:layout_marginLeft="120px"
 
             />
@@ -86,13 +98,13 @@
             android:id="@+id/btn_addrecord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add_Record"
+            android:text="Add Record"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="100px"
             android:layout_marginLeft="120px"
-            android:layout_marginTop="200px"
+            android:layout_marginTop="200dp"
             />
 
     </LinearLayout>
@@ -100,23 +112,24 @@
         android:id="@+id/btn_viewfood"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View_Food"
+        android:text="View Food"
         android:background="@color/blue"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="100px"
-        android:layout_marginTop="200px"
+        android:layout_marginTop="20dp"
         />
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240px"
+        android:layout_marginTop="20px"
         android:background="@null"
         android:text="Logout"
         android:textColor="@color/black"
         android:textSize="70px"
         android:gravity="center"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        />
 
 </LinearLayout>

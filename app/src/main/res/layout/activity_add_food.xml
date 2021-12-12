@@ -4,22 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddFood"
+    tools:context=".add_food"
     android:orientation="vertical"
     >
-    <com.google.android.material.appbar.AppBarLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        >
+        <Button
+            android:id="@+id/vectorAddFood"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:title="BMI Analyzer"
-            app:titleTextColor="@color/white"
-            app:titleMarginStart="400px"
-            android:background="@color/blue"
-            >
-        </androidx.appcompat.widget.Toolbar>
-    </com.google.android.material.appbar.AppBarLayout>
+            android:drawableLeft="@drawable/back"
+            android:background="@null">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Analyzer"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="90dp"
+            />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/txt_AddFood"
@@ -94,6 +105,14 @@
             android:inputType="text"
             android:minHeight="48dp" />
 
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </Spinner>
+
     </LinearLayout>
 
     <LinearLayout
@@ -163,12 +182,11 @@
             android:layout_marginLeft="120px"
             android:layout_marginTop="2000px"
             android:background="@color/blue"
+            android:clickable="true"
             android:text="Upload Photo"
             android:textColor="@color/white"
             android:textSize="80px"
-            android:textStyle="bold"
-            android:clickable="true"
-            />
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_savephoto"
@@ -177,12 +195,11 @@
             android:layout_marginLeft="120px"
             android:layout_marginTop="2000px"
             android:background="@color/blue"
+            android:clickable="true"
             android:text="Save"
             android:textColor="@color/white"
             android:textSize="80px"
-            android:textStyle="bold"
-            android:clickable="true"
-            />
+            android:textStyle="bold" />
 
     </LinearLayout>
 </RelativeLayout>

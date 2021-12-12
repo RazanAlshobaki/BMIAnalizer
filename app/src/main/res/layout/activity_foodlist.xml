@@ -4,32 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Foodlist"
+    tools:context=".foodlist"
     android:orientation="vertical">
-    <com.google.android.material.appbar.AppBarLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        >
+        <Button
+            android:id="@+id/vectorFoodList"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:title="BMI Analyzer"
-            app:titleTextColor="@color/white"
-            app:titleMarginStart="400px"
-            android:background="@color/blue"
-            >
-        </androidx.appcompat.widget.Toolbar>
-    </com.google.android.material.appbar.AppBarLayout>
+            android:drawableLeft="@drawable/back"
+            android:background="@null">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Analyzer"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="90dp"
+            />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/txt_foodlist1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Food_List"
-        android:textColor="@color/blue"
         android:layout_marginTop="300px"
         android:gravity="center"
+        android:text="Food List"
+        android:textColor="@color/blue"
         android:textSize="100px"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_foodlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="140dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>

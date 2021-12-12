@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/fieldborder"
+        >
+        <ImageView
+            android:id="@+id/salamonimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/salamon"
+            />
+            <LinearLayout
+                android:id="@+id/foodset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salamon"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fish"
+                android:textSize="30dp"
+                android:layout_marginTop="20px"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22 cal/g"
+                android:textSize="30dp"
+                android:layout_marginTop="20px"
+
+                />
+            </LinearLayout>
+<Button
+    android:id="@+id/editbutton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:text="Edit"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="25dp"
+/>
+
+    </LinearLayout>
+
+</RelativeLayout>

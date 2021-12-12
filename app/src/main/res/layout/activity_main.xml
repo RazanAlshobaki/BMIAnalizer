@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".MainActivity">
+    tools:context=".main">
 
     <ImageView
         android:id="@+id/img_bmi"
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="990px"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="650dp"
         android:background="@null"
         android:clickable="true"
         android:text="Next"
