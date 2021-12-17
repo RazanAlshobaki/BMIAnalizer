@@ -118,7 +118,7 @@
 
 
             <EditText
-                android:id="@+id/editTextText1"
+                android:id="@+id/editTextText1weight"
                 android:layout_width="70dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
@@ -134,7 +134,7 @@
                 />
 
             <Button
-                android:id="@+id/aa"
+                android:id="@+id/increment33"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
@@ -182,7 +182,7 @@
             android:layout_marginTop="50px"
             android:layout_marginLeft="100px">
             <Button
-                android:id="@+id/butdecrement11"
+                android:id="@+id/butdecrementlength"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
@@ -209,7 +209,7 @@
 
                 />
             <Button
-                android:id="@+id/a"
+                android:id="@+id/incLength"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
