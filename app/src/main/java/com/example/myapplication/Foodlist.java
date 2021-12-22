@@ -15,15 +15,13 @@ public class Foodlist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_foodlist);
         rvf=findViewById(R.id.rv_foodlist);
-        ArrayList<food> foods=new ArrayList<>();
-        foods.add(new food(R.id.salamonimg));
-        foods.add(new food(R.id.foodset));
-        foods.add(new food(R.id.editbutton));
-
-
-
-        RecyclerViewAdapterOfFood adapter= new RecyclerViewAdapterOfFood(foods);
-        RecyclerView.LayoutManager lm=new GridLayoutManager(Context: this, spanCount:1);
+        ArrayList<Food> foods=new ArrayList<>();
+        foods.add(new Food(R.drawable.salamon,"Salamon", "fish", "22 cal/g"));
+        foods.add(new Food(R.drawable.salamon,"Salamon", "fish", "22 cal/g"));
+        foods.add(new Food(R.drawable.salamon,"Salamon", "fish", "22 cal/g"));
+        foods.add(new Food(R.drawable.salamon,"Salamon", "fish", "22 cal/g"));
+        FoodAdapter adapter= new FoodAdapter(foods);
+        RecyclerView.LayoutManager lm=new GridLayoutManager( this, 2);
         rvf.setHasFixedSize(true);
         rvf.setLayoutManager(lm);
         rvf.setAdapter(adapter);

@@ -2,19 +2,28 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 public class new_record extends AppCompatActivity {
-    Button btn_inc,btn_dec, button_increment, button_decremrement;
+    Button btn_inc,btn_dec, button_increment, button_decremrement, button_saverecord;
     EditText et_number, edit_number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_record);
+        button_saverecord= findViewById(R.id.btn_saverecord);
+        button_saverecord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent (new_record.this, AddFood.class);
+                startActivity(intent);
+            }
+        });
 
         btn_inc = findViewById(R.id.buttinc222);
         et_number = findViewById(R.id.editTextText22);

@@ -7,26 +7,30 @@
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:orientation="horizontal"
         android:layout_marginTop="130dp"
         android:background="@drawable/fieldborder"
         >
         <ImageView
             android:id="@+id/salamonimg"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:src="@drawable/salamon"
+            android:background="@drawable/fieldborder"
+
             />
             <LinearLayout
                 android:id="@+id/foodset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_marginLeft="70px"
                 >
 
 
             <TextView
+                android:id="@+id/text_salamon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Salamon"
@@ -35,6 +39,7 @@
                 android:textColor="@color/black"
                 />
             <TextView
+                android:id="@+id/text_fish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fish"
@@ -42,6 +47,8 @@
                 android:layout_marginTop="20px"
                 />
             <TextView
+                android:id="@+id/text_calrv"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="22 cal/g"
@@ -50,16 +57,29 @@
 
                 />
             </LinearLayout>
-<Button
-    android:id="@+id/editbutton"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/blue"
-    android:text="Edit"
-    android:textColor="@color/white"
-    android:textStyle="bold"
-    android:textSize="25dp"
-/>
+
+        <Button
+            android:id="@+id/editbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:background="@color/blue"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/closeimage"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:src="@drawable/close"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="50dp"
+            />
+
+
 
     </LinearLayout>
 

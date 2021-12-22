@@ -9,6 +9,6 @@ public class FoodDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_FoodDetails);
+        setContentView(R.layout.activity_food_details);
     }
 }

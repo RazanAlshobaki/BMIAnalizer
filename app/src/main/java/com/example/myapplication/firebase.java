@@ -1,41 +1,56 @@
 package com.example.myapplication;
 
+import android.database.DatabaseErrorHandler;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 
+import java.sql.DatabaseMetaData;
+
 public class firebase {
-    public static void addListenerForUserUpdate(AppCompleteActivity actv){
+    public static void addListenerForUserUpdate(AppCompatActivity actv){
         DB.getCurrentUserData().addValueEventListener(new ValueEventListener(){
+
          @Override
             public void onDataChange(@NonNull DataSnapshot datasnapshot){
              User.user.updateLists(datasnapshot,actv);
              HomePage.checkBMIChange();
          }
             @Override
-            public void onCancelled(@NonNull DatabaseError error){
+            public void onCancelled(@NonNull DatabaseErrorHandler error){
 
             }
 
         });
     }
-    public static void createUserData(AppCompleteActivity context, User user){
+    public static void createUserData(AppCompatActivity context, User user){
         try{
          DB.getCurrentUserName().setValue(user.getName())
-         .addFailureListener(){
+         .addFailureListener(new OnFailureListener() {
                 @Override
-                public void onFailure(@NonNull Exception e){
+                public void onFailure (@NonNull Exception e){
+                    Toast.makeText(context, "Failed to create user record:" + e.getMessage(), Toast.LENGTH_SHORT).show();
 
                 }
-
-            }
+            })
+            .addOnSuccessListener(new OnSuccessListener<Void>(){
+                public void onSuccess(Void aVoid){
+                    move(context);
+                }
+            });
+            }catch (Exception e){
+            Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT);
         }
     }
     public static void completeUserData(User user){}
-    public static void move(AppCompleteActivity context){}
-    public static void registration(User user, AppCompleteActivity context){
+    public static void move(AppCompatActivity context){}
+    public static void registration(User user, AppCompatActivity context){
         FirebaseAuth mAuth= FirebaseAuth.getInstance();
         user.setmAuth(mAuth);
         mAuth.createUserWithEmailAndPassword(user.getEmail(), user.getPassword())
-                .addOnCompleteListener(context, new OnCompleteListener<AuthResult>()){
+                .addOnCompleteListener(context, new OnCompleteListener<AuthResult>(){
             @Override
               public void onComplete(@NonNull Task<AuthResult> task){
                 if (task.isSuccessful()){
@@ -48,7 +63,7 @@ public class firebase {
         });
 
     }
-    public static void login_user(AppCompleteActivity context) {
+    public static void login_user(AppCompatActivity context) {
         try {
             User.user.setmAuth(FirebaseAuth.getInstance());
             User.user.getmAuth().signInWithEmailAndPassword(User.user.getEmail(), User.user.getPassword())
@@ -96,25 +111,25 @@ public class firebase {
         DB.getCurrentUserFoods().child(record.getId()).removeValue();
     }
     public static class DB{
-    public static DatabaseReference getUsers(){
+    public static DatabaseMetaData getUsers(){
         return FirebaseDatabase.getInstance().getReference("Users");
     }
-        public static DatabaseReference getCurrentUserData(){
+        public static DatabaseMetaData getCurrentUserData(){
         return getUsers().child(User.user.getmAuth().getCurrentUser().getUid());
     }
-        public static DatabaseReference getCurrentUserFoods(){
+        public static DatabaseMetaData getCurrentUserFoods(){
             return getCurrentUserData().child("foods");
     }
-        public static DatabaseReference getCurrentUserBMIRecords(){
+        public static DatabaseMetaData getCurrentUserBMIRecords(){
             return getCurrentUserData().child("records");
     }
-        public static DatabaseReference getCurrentUserName(){
+        public static DatabaseMetaData getCurrentUserName(){
             return getCurrentUserData().child("name");
     }
-        public static DatabaseReference getCurrentUserGender(){
+        public static DatabaseMetaData getCurrentUserGender(){
             return getCurrentUserData().child("gender");
         }
-        public static DatabaseReference getCurrentUserBirthDate(){
+        public static DatabaseMetaData getCurrentUserBirthDate(){
             return getCurrentUserData().child("birthdate");
         }
     }

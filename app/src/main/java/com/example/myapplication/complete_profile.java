@@ -13,26 +13,35 @@ import android.widget.Toast;
 
 public class complete_profile extends AppCompatActivity {
     RadioButton rb_male, rb_female;
-    Button btn_inc1,btn_dec1, button_increment1, button_decremrement1;
+    Button btn_inc1,btn_dec1, button_increment1, button_decremrement1, save_data;
     EditText et_number1, edit_number1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_profile);
-
-        rb_female = findViewById(R.id.radioFemale);
-        rb_male = findViewById(R.id.radioMale);
-
-        rb_male.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        save_data= findViewById(R.id.btn_save);
+        save_data.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b)
-                    Toast.makeText(getBaseContext(), "Checked", Toast.LENGTH_LONG).show();
-                else
-                    Toast.makeText(getBaseContext(), "Un checked", Toast.LENGTH_LONG).show();
+            public void onClick(View view) {
+                Intent intent=new  Intent(complete_profile.this, HomePage.class);
+                startActivity(intent);
+
             }
         });
+            rb_female = findViewById(R.id.radioFemale);
+            rb_male = findViewById(R.id.radioMale);
+
+            rb_male.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (b)
+                        Toast.makeText(getBaseContext(), "Checked", Toast.LENGTH_LONG).show();
+                    else
+                        Toast.makeText(getBaseContext(), "Un checked", Toast.LENGTH_LONG).show();
+                }
+            });
+
         btn_inc1 = findViewById(R.id.increment33);
         et_number1 = findViewById(R.id.editTextText1weight);
         btn_inc1.setOnClickListener(new View.OnClickListener() {
